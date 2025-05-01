@@ -29,7 +29,23 @@
       </div>
     </div>
   </nav>
+  <div class="container mt-5">
+    <h1 class="mb-4">Copia de seguridad y restauración</h1>
 
+    <h2>Proceso de copia de seguridad</h2>
+    <p>Accedemos a <code>http://localhost:8069/web/database/manager</code> y seleccionamos nuestra base de datos. Hacemos clic en "Backup", introducimos la contraseña maestra y descargamos el archivo .zip resultante.</p>
+    <img src="../img/backup.png" class="img-fluid mb-3">
+
+    <h2>Restauración de la base de datos</h2>
+    <p>En el mismo panel accedemos a "Restore", seleccionamos el archivo de backup del compañero y restauramos con una nueva contraseña si es necesario.</p>
+    <img src="../img/restore.png" class="img-fluid">
+
+    <h3>Efectos:</h3>
+    <ul>
+      <li>Se replican todos los módulos, configuraciones y datos del sistema original.</li>
+      <li>Permite compartir configuraciones entre compañeros fácilmente.</li>
+    </ul>
+  </div>
   <footer class="text-center mt-5 py-3 bg-light">
     <p>&copy; 2025 Proyecto ERP Odoo - Paula Moreno y Nahuel Lund.</p>
   </footer>

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Instalación</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-  <header class="text-center bg-primary text-white py-4">
+  <header class="text-center text-white py-4">
     <h1>Instalación</h1>
     <p class="lead">ASIX1 - Llenguatges de Marques</p>
   </header>
@@ -29,6 +29,107 @@
       </div>
     </div>
   </nav>
+
+  <div class="container mt-5">
+    <h2 class="mb-4">Guía paso a paso: Instalación de Odoo 16 Community</h2>
+    <p>Esta guía detalla todos los pasos necesarios para instalar correctamente Odoo 16 Community en un entorno Windows usando una máquina virtual limpia.</p>
+
+    <h2>Paso 1: Descargar Odoo</h2>
+    <p>Ir a la página oficial de descargas de Odoo: <a href="https://www.odoo.com/es_ES/page/download" target="_blank">https://www.odoo.com/es_ES/page/download</a> y seleccionar la versión Odoo Community <strong>16</strong> para Windows.</p>
+
+    <h2>Paso 2: Ejecutar el instalador</h2>
+    <ol>
+      <li>Primero de todo, irnos a <strong>Protección antivirus y contra amenazas</strong></li>
+      <li>Seguidamente, deberemos de irnos al apartado <strong>Administrar la configuración</strong> y desactivar todo, ya que si no, nos dejará ejecutar el instalado.</li>
+      <img src="../img/captantivirus.png" alt="antivirus y contra amenazas" class="img-fluid mb-4">
+      <li>Una vez los pasos anteriores, hacer doble clic sobre el archivo descargado para iniciar la instalación. Lo primero que deberemos hacer será seleccionar el idioma y hacer clic en "OK" (solo hay inglés o frances).</li>
+      <img src="../img/primera.png" alt="primera captura odoo" class="img-especial3">
+      <li>Cuando ya hayamos hecho el paso anterior, se nos abrirá la siguiente pestaña en la cual solo deberemos de hacer clic en "Netx >".</li>
+      <img src="../img/segunda.png" alt="segunda captura odoo" class="img-fluid mb-4">
+      <li>Siguiendo, nos aparecerá la siguiente pestaña en la cual solo deberemos de hacer clic en "I Agree".</li>
+      <img src="../img/tercera.png" alt="tercera captura odoo" class="img-fluid mb-4">
+      <li>Durante el proceso, asegurarse de marcar la opción para instalar PostgreSQL, una vez marcada deberemos de hacer clic en "Next >".</li>
+      <img src="../img/cuarta.png" alt="cuarta captura odoo" class="img-fluid mb-4">
+      <li>Seguidamente, en esta pestaña, deberemos de dejarla tal cual, como mucho podemos modificar la contraseña y hacemos clic en "Netx >".</li>
+      <img src="../img/quinta.png" alt="quinta captura odoo" class="img-fluid mb-4">
+      <li>Una vez hemos realizado los pasos anteriores se nos abrirá la siguiente pestaña en la cual solo deberemos de hacer clic en "Install" para instalar el instalador.</li>
+      <img src="../img/sexta.png" alt="sexta captura odoo" class="img-fluid mb-4">
+      <li>Seguir el asistente hasta finalizar la instalación y una vez finalizada hacer clic en "Next >".</li>
+      <img src="../img/septima.png" alt="septima captura odoo" class="img-fluid mb-4">
+      <li>Finalmente cuando nos aparezca esta pestaña simplemente deberemos de hacer clic en "Finish".</li>
+      <img src="../img/octava.png" alt="octava captura odoo" class="img-fluid mb-4">
+    </ol>
+
+    <h2>Paso 3: Crear una base de datos nueva</h2>
+    <ol>
+      <li>Acceder a <code>http://localhost:8069</code> desde tu navegador o en nuestro caso, nos llevará automáticamente solo ya que es lo que sigue tras la instalación.</li>
+      <li>Se abrirá la pantalla de creación de base de datos.</li>
+      <li>Rellenar los campos:
+        <ul>
+          <li><strong>Nombre de la base de datos:</strong> db_TuNombre</li>
+          <li><strong>Email administrador:</strong> Tu correo</li>
+          <li><strong>Contraseña:</strong> Contraseña del administrador</li>
+          <li><strong>Idioma y país:</strong> Español (en nuestro caso)</li>
+        </ul>
+        <h3>Ejemplo de cómo lo hemos hecho nosotros:</h3>
+        <div class="row text-center mb-4">
+          <div class="col-md-6">
+            <h4>Nahuel:</h4>
+            <img src="../img/nahuelbbdd.png" alt="BBDD Nahuel" class="img-especial">
+          </div>
+          <div class="col-md-6">
+            <h4>Paula:</h4>
+            <img src="../img/paulabbdd.png" alt="BBDD Paula" class="img-especial">
+          </div>
+        </div>
+      </li>
+      <li>Marcar la casilla <strong>Demo data</strong>.</li>
+      <li>Guardar la contraseña maestra que aparece al final.</li>
+      <li>Hacer clic en <strong>"Create database"</strong> y listo.</li>
+    </ol>
+
+
+    <h2>Paso 4: Acceso al panel principal</h2>
+    <p>Una vez creada la base de datos, se redirige al dashboard principal, para acceder a ella deberemos de colocar el <strong>correo</strong> y la <strong>contraseña</strong> creados anteriormente y simplemente hacer clic en "Iniciar sesión".</p>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <h4>Ejemplo Nahuel:</h4>
+        <img src="../img/nahuelejemplo2.png" alt="Ejemplo nahuel" class="img-especial">
+      </div>
+      <div class="col-md-6">
+        <h4>Ejemplo Paula:</h4>
+        <img src="../img/paulaejemplo2.png" alt="Ejemplo paula" class="img-especial">
+      </div>
+    </div>
+
+    <p>Una vez iniciamos la sesión solo aparece la opción "Aplicaciones".</p>
+    <img src="../img/aplicaciones.png" alt="Dashboard vacío" class="img-fluid mb-4 d-block mx-auto">
+
+    <h2>Paso 6: Verificación del entorno</h2>
+    <ul>
+      <li>Los módulos deben aparecer visibles en el dashboard.</li>
+      <li>El menú lateral incluirá más opciones como Contactos, Configuración, etc.</li>
+    </ul>
+    <h4>Ejemplo comparativo: Ventas vs CRM</h4>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <h5>Ventas</h5>
+        <img src="../img/ventas2.png" alt="Ventas visibles" class="img-especial2">
+        <img src="../img/ventas3.png" alt="Menú lateral ventas" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h5>CRM</h5>
+        <img src="../img/crmtotal.png" alt="CRM visibles" class="img-especial2">
+        <img src="../img/crm3.png" alt="Menú lateral CRM" class="img-fluid">
+      </div>
+    </div>
+
+    <h2>Consejos importantes</h2>
+    <ul>
+      <li>Desactiva temporalmente Windows Defender si bloquea el instalador.</li>
+      <li>Recuerda siempre apuntar la contraseña maestra.</li>
+    </ul>
+  </div>
 
   <footer class="text-center mt-5 py-3 bg-light">
     <p>&copy; 2025 Proyecto ERP Odoo - Paula Moreno y Nahuel Lund.</p>
