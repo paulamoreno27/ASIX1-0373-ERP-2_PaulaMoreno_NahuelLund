@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-  <header class="text-center text-white py-4">
+  <header class="text-center py-4">
     <h1>Backup y restauración</h1>
     <p class="lead">ASIX1 - Llenguatges de Marques</p>
   </header>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html">Inicio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -29,67 +29,68 @@
       </div>
     </div>
   </nav>
+
   <div class="container mt-5">
     <h2 class="mb-4">Copia de seguridad y restauración</h2>
 
     <h2>Proceso de copia de seguridad</h2>
     <p>Accedemos a <code>http://localhost:8069/web/database/manager</code> y seleccionamos nuestra base de datos. Hacemos clic en "Backup", introducimos la contraseña maestra y descargamos el archivo .zip resultante.</p>
-    <div class="row text-center">
-      <div class="col-md-6">
-        <img src="../img/backup1.png" alt="backup" class="img-especial2">
-        <p class="fw-light">Hacer clic en "Backup"</p>
-      </div>
-      <div class="col-md-6">
-        <img src="../img/backup2.png" alt="backup proceso" class="img-especial2">
-        <p class="fw-light">Colocar la contraseña maestra, seleccionar ".zip" y hacer clic en "Backup"</p>
-      </div>
-    </div>
+
+    <img src="../img/backup1.png" alt="backup" class="img-especial2">
+    <p class="texto-bajo-imagen">Hacer clic en "Backup"</p>
+
+    <img src="../img/backup2.png" alt="backup proceso" class="img-especial3">
+    <p class="texto-bajo-imagen">Colocar la contraseña maestra, seleccionar ".zip" y hacer clic en "Backup"</p>
 
     <h2>Restauración de la base de datos</h2>
     <p>En el mismo panel accedemos a "Restore", seleccionamos el archivo de backup del compañero y restauramos con una nueva contraseña si es necesario.</p>
-    <div class="row text-center">
-      <div class="col-md-6">
-        <img src="../img/backup1.png" alt="Vista Kanban CRM" class="img-especial mb-3">
-        <p class="fw-light">Hacer clic en "Restore"</p>
-      </div>
-      <div class="col-md-6">
-        <img src="../img/backup4.png" alt="Formulario oportunidad" class="img-especial mb-3">
-        <p class="fw-light">Seleccionamos el archivo ".zip", ponemos la contraseña de la bbdd y el nombre que queramos poner y hacemos clic en  "Continue"</p>
-      </div>
+
+    <div class="col-md-6">
+      <img src="../img/backup1.png" alt="Vista Kanban CRM" class="img-especial2 mb-3">
+      <p class="fw-light">Hacer clic en "Restore"</p>
     </div>
+    <div class="col-md-6">
+      <img src="../img/backup4.png" alt="Formulario oportunidad" class="img-especial2 mb-3">
+      <p class="fw-light">Seleccionamos el archivo ".zip", ponemos la contraseña de la bbdd y el nombre que queramos poner y hacemos clic en "Continue"</p>
+    </div>
+
     <br><br>
     <div class="row text-center">
       <div class="col-md-6">
-        <img src="../img/backupnahuel.png" alt="Vista Kanban CRM" class="img-especial mb-3">
+        <img src="../img/backupnahuel.png" alt="Vista Kanban CRM" class="img-especial2 mb-3">
         <p class="fw-light">Ejemplo Nahuel restaura la de Paula:</p>
       </div>
       <div class="col-md-6">
-        <img src="../img/backup4.png" alt="Formulario oportunidad" class="img-especial mb-3">
+        <img src="../img/backup4.png" alt="Formulario oportunidad" class="img-especial2 mb-3">
         <p class="fw-light">Ejemplo Paula restaura la de Nahuel:</p>
       </div>
     </div>
+
     <br><br>
     <p>Seguidamente, una vez restauradas las bbdd, deberemos de hacer clic en la restaurada para poder iniciar sesión.</p>
+
     <div class="row text-center">
       <div class="col-md-6">
-        <img src="../img/restauradas.png" alt="Vista Kanban CRM" class="img-especial mb-3">
+        <img src="../img/restauradas.png" alt="Vista Kanban CRM" class="img-especial2 mb-3">
         <p class="fw-light">Hacer clic en la bbdd del compañero.</p>
       </div>
       <div class="col-md-6">
-        <img src="../img/restauradapaula.png" alt="Formulario oportunidad" class="img-especial mb-3">
+        <img src="../img/restauradapaula.png" alt="Formulario oportunidad" class="img-especial2 mb-3">
         <p class="fw-light">Iniciar con sus credenciales:</p>
       </div>
     </div>
+
     <div class="row text-center">
       <div class="col-md-6">
-        <img src="../img/restauradapornahuel.png" alt="Vista Kanban CRM" class="img-especial mb-3">
-        <p class="fw-light">Asi se veria una vez iniciado sesion (bbdd Paula restaurada por Nahuel).</p>
+        <img src="../img/restauradapornahuel.png" alt="Vista Kanban CRM" class="img-especial2 mb-3">
+        <p class="fw-light">Así se vería una vez iniciada sesión (bbdd Paula restaurada por Nahuel).</p>
       </div>
       <div class="col-md-6">
-        <img src="../img/restauradaporpaula.png" alt="Formulario oportunidad" class="img-especial mb-3">
-        <p class="fw-light">Por otro lado, asi se veria la bbdd Nahuel restaurada por Paula:</p>
+        <img src="../img/restauradaporpaula.png" alt="Formulario oportunidad" class="img-especial2 mb-3">
+        <p class="fw-light">Por otro lado, así se vería la bbdd Nahuel restaurada por Paula:</p>
       </div>
     </div>
+
     <br><br><br>
     <h3>Efectos:</h3>
     <ul>
@@ -97,6 +98,7 @@
       <li>Permite compartir configuraciones entre compañeros fácilmente.</li>
     </ul>
   </div>
+
   <footer class="text-center mt-5 py-3 bg-light">
     <p>&copy; 2025 Proyecto ERP Odoo - Paula Moreno y Nahuel Lund.</p>
   </footer>

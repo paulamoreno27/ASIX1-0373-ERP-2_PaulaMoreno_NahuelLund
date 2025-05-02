@@ -53,36 +53,31 @@ body {
   }
 
   .img-especial {
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
-    margin-top: 1rem;
-    width: 95%;
-    height: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
+    height: 80%;
+    width: 100%;
   }
+  
+  .texto-bajo-imagen {
+    text-align: center;
+    font-weight: 300;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #6c63ff;
+  }
+  
 
   .img-especial2{
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
-    margin-top: 1rem;
-    width: 60%;
-    height: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
+    height: 80%;
+    width: 100%;
   }
 
   .img-especial3{
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
-    margin-top: 1rem;
-    width: 50%;
-    height: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
+    height: 40%;
+    width: 100%;
   }
 
   .integrante {
