@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Backup - Restauración</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-  <header class="text-center bg-primary text-white py-4">
+  <header class="text-center text-white py-4">
     <h1>Backup y restauración</h1>
     <p class="lead">ASIX1 - Llenguatges de Marques</p>
   </header>
@@ -30,16 +30,67 @@
     </div>
   </nav>
   <div class="container mt-5">
-    <h1 class="mb-4">Copia de seguridad y restauración</h1>
+    <h2 class="mb-4">Copia de seguridad y restauración</h2>
 
     <h2>Proceso de copia de seguridad</h2>
     <p>Accedemos a <code>http://localhost:8069/web/database/manager</code> y seleccionamos nuestra base de datos. Hacemos clic en "Backup", introducimos la contraseña maestra y descargamos el archivo .zip resultante.</p>
-    <img src="../img/backup.png" class="img-fluid mb-3">
+    <div class="row text-center">
+      <div class="col-md-6">
+        <img src="../img/backup1.png" alt="backup" class="img-especial2">
+        <p class="fw-light">Hacer clic en "Backup"</p>
+      </div>
+      <div class="col-md-6">
+        <img src="../img/backup2.png" alt="backup proceso" class="img-especial2">
+        <p class="fw-light">Colocar la contraseña maestra, seleccionar ".zip" y hacer clic en "Backup"</p>
+      </div>
+    </div>
 
     <h2>Restauración de la base de datos</h2>
     <p>En el mismo panel accedemos a "Restore", seleccionamos el archivo de backup del compañero y restauramos con una nueva contraseña si es necesario.</p>
-    <img src="../img/restore.png" class="img-fluid">
-
+    <div class="row text-center">
+      <div class="col-md-6">
+        <img src="../img/backup1.png" alt="Vista Kanban CRM" class="img-especial mb-3">
+        <p class="fw-light">Hacer clic en "Restore"</p>
+      </div>
+      <div class="col-md-6">
+        <img src="../img/backup4.png" alt="Formulario oportunidad" class="img-especial mb-3">
+        <p class="fw-light">Seleccionamos el archivo ".zip", ponemos la contraseña de la bbdd y el nombre que queramos poner y hacemos clic en  "Continue"</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <img src="../img/backupnahuel.png" alt="Vista Kanban CRM" class="img-especial mb-3">
+        <p class="fw-light">Ejemplo Nahuel restaura la de Paula:</p>
+      </div>
+      <div class="col-md-6">
+        <img src="../img/backup4.png" alt="Formulario oportunidad" class="img-especial mb-3">
+        <p class="fw-light">Ejemplo Paula restaura la de Nahuel:</p>
+      </div>
+    </div>
+    <br><br>
+    <p>Seguidamente, una vez restauradas las bbdd, deberemos de hacer clic en la restaurada para poder iniciar sesión.</p>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <img src="../img/restauradas.png" alt="Vista Kanban CRM" class="img-especial mb-3">
+        <p class="fw-light">Hacer clic en la bbdd del compañero.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="../img/restauradapaula.png" alt="Formulario oportunidad" class="img-especial mb-3">
+        <p class="fw-light">Iniciar con sus credenciales:</p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <img src="../img/restauradapornahuel.png" alt="Vista Kanban CRM" class="img-especial mb-3">
+        <p class="fw-light">Asi se veria una vez iniciado sesion (bbdd Paula restaurada por Nahuel).</p>
+      </div>
+      <div class="col-md-6">
+        <img src="../img/restauradaporpaula.png" alt="Formulario oportunidad" class="img-especial mb-3">
+        <p class="fw-light">Por otro lado, asi se veria la bbdd Nahuel restaurada por Paula:</p>
+      </div>
+    </div>
+    <br><br><br>
     <h3>Efectos:</h3>
     <ul>
       <li>Se replican todos los módulos, configuraciones y datos del sistema original.</li>
