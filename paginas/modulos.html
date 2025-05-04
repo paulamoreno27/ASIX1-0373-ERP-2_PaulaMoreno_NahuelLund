@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Modulos</title>
+  <title>Módulos</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="icon" href="../img/filter-solid.svg" type="image/x-icon">
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
@@ -24,24 +25,78 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">Inicio</a>
+      <a class="navbar-brand navar" href="../index.html">Inicio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="./instalacion.html">Guía de instalación</a></li>
-          <li class="nav-item"><a class="nav-link" href="./modulos.html">Módulos seleccionados</a></li>
-          <li class="nav-item"><a class="nav-link" href="./backup.html">Backup y restauración</a></li>
-          <li class="nav-item"><a class="nav-link" href="./conclusiones.html">Conclusiones</a></li>
+          <li class="nav-item navar"><a class="nav-link" href="./instalacion.html">Guía de instalación</a></li>
+          <li class="nav-item navar"><a class="nav-link" href="./modulos.html">Módulos seleccionados</a></li>
+          <li class="nav-item navar"><a class="nav-link" href="./backup.html">Backup y restauración</a></li>
+          <li class="nav-item navar"><a class="nav-link" href="./conclusiones.html">Conclusiones</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <div class="container mt-5">
-      <h2>1.Módulo de Ventas:</h2>
+    <h2 class="mb-4">Módulos instalados:</h2>
+    <section>
+      <h3>Justificación:</h3>
+      <p>El módulo Ventas es imprescindible para cualquier empresa que comercialice productos o servicios. Permite gestionar todo el proceso de venta, desde la elaboración de presupuestos hasta la emisión de pedidos y facturas.  Lo hemos elegido porque una pyme necesita controlar sus ventas de forma organizada, tener un registro claro de clientes, productos, precios y entregas. Este módulo centraliza toda esa información, mejorando la eficiencia y reduciendo errores administrativos.</p>
+            
+      <h3>Características:</h3>
+          <ul>
+            <li>Creación de presupuestos y pedidos fácilmente.</li>
+            <li>Gestión de clientes, productos y precios desde una sola vista.</li>
+            <li>Conversión automática de presupuestos en pedidos y facturas.</li>
+            <li>Conexión directa con contabilidad e inventario.</li>
+            <li>Historial de transacciones y precios por cliente.</li>
+            <li>Compatible con el módulo CRM para seguimiento de clientes.</li>
+          </ul>
+          
+            <h3>Funcionamiento paso a paso:</h3>
+            <ol>
+              <strong><li>Acceder al módulo Ventas desde el panel principal:</li></strong>
+              <img src="../img/ventas1.png" alt="Vista general módulo Ventas" class="img-especial5">
+              <p class="texto-bajo-imagen">Entramos desde el panel de aplicaciones en "Ventas".</p>
+          
+              <strong><li>Crear un presupuesto:</li></strong>
+              <img src="../img/img_ventas2.png" alt="Crear presupuesto" class="img-especial">
+              <p class="texto-bajo-imagen">Haz clic en "Presupuestos" y luego en "Crear" para generar uno nuevo.</p>
+          
+              <strong><li>Añadir cliente:</li></strong>
+              <img src="../img/img_ventas3.png" alt="Añadir cliente" class="img-especial">
+              <p class="texto-bajo-imagen">Seleccionamos un cliente o lo creamos directamente desde el formulario.</p>
+          
+              <strong><li>Añadir productos:</li></strong>
+              <img src="../img/img_ventas4.png" alt="Añadir productos" class="img-especial">
+              <p class="texto-bajo-imagen">Agregamos productos, ajustamos precios, cantidades o descuentos.</p>
+          
+              <strong><li>Enviar presupuesto al cliente:</li></strong>
+              <img src="../img/img_ventas5.png" alt="Enviar presupuesto" class="img-especial5">
+              <p class="texto-bajo-imagen">Podemos enviarlo en PDF o por correo electrónico al cliente.</p>
+          
+              <strong><li>Convertir presupuesto en pedido:</li></strong>
+              <img src="../img/img_ventas6.png" alt="Convertir en pedido" class="img-especial5">
+              <p class="texto-bajo-imagen">Con un clic, convertimos el presupuesto aceptado en un pedido de venta.</p>
+          
+              <strong><li>Generar la factura:</li></strong>
+              <img src="../img/img_ventas7.png" alt="Generar factura" class="img-especial5">
+              <p class="texto-bajo-imagen">Desde el pedido generado, creamos la factura automáticamente.</p>
+          
+              <strong><li>Ver factura emitida:</li></strong>
+              <img src="../img/img_ventas8.png" alt="Factura emitida" class="img-especial5">
+              <p class="texto-bajo-imagen">Aquí vemos el presupuesto convertido en factura para el cliente.</p>
+          
+              <strong><li>Resultado final de la facturación:</li></strong>
+              <img src="../img/img_ventas9.png" alt="Factura final" class="img-especial">
+              <p class="texto-bajo-imagen">Así se visualiza la factura definitiva con todos los datos generados.</p>
+            </ol>
     </section>
+
+    
     <hr>
     <section>
       <h2>2.Módulo CRM:</h2>
